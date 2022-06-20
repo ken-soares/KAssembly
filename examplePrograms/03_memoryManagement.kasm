@@ -1,0 +1,25 @@
++ There are some commands to delete or display variables that are stored in ram
++ let's make 3 variables called a,b and c and let's display them in the terminal
++ using the yav ("yeet all variables") keyword
+
+put a 1
+put b 2
+put c 3
+
+yav
+
++ you can delete individual variables when you are done using them with the
++ del ("delete") keyword
+
+del a
+
++ if you write yav once again you'll see that the pair 'a': 1
++ will have disappeared
+
+yav
+
++ you can delete all your variables using the del_all! keyword but be careful
++ as this can break your program
+
+del_all!
+

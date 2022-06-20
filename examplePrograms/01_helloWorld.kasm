@@ -1,0 +1,10 @@
++ yeet is the command used to display text in the terminal
++ the first argument is either a string variable or a comma (,) followed by text
+
++ with a comma:
+yeet , hello world
+
++ with a variable:
+put hw hello world
+yeet hw
+

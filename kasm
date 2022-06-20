@@ -16,14 +16,15 @@ def readfile(filename):
         return data
     
 if len(sys.argv) == 1:
-    print("K-Assembly interpreter\n\tuse -h flag for more info")
+    print("\033[3;36;40mKAssembly interpreter")
+    print("\033[1;37;40muse -h flag for more info")
 else:
     if sys.argv[1] == "-h":
-        print("read your kasm file with ./kasm {your-file}.kasm")
-        print("You can see example programs in the examplePrograms/ folder")
-        print("list of flags:")
+        print("\033[0;32;40mread your kasm file with ./kasm {your-file}.kasm")
+        print("\033[1;37;40mYou can see example programs in the examplePrograms/ folder\n")
+        print("\033[0;37;40mlist of flags:")
         print("-v: display version")
-        print("-d: link to language documentation (not implemented)")
+        print("\033[1;31;40m-d: link to language documentation (not implemented)")
     elif sys.argv[1] == "-v":
         print("Kasm interpreter ver 0.1 by Kenneth Soares")
     else:

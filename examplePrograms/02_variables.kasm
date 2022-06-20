@@ -1,0 +1,9 @@
++ variables can be defined with the put keyword followed by the name of the variable
++ and its value. 
++ you MUSTN'T use the following names for your variables: BEGIN, END or any number
++ such as 1,2,3 etc..
++ you can display the value of a variable as shown before using yeet
+
+put a 4
+yeet a
+

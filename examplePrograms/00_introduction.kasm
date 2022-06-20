@@ -1,0 +1,10 @@
++ This first line is a comment, which means it won't be read as code
++ to create a comment, put a + sign at the beginning of the line you're on.
++ So this language is KAssembly or kasm for short
++ it is meant to teach non-programmers how to code as it is very barebones
++ and concise unlike say, Java where you would need to type
++ System.out.println("your message"); just to send a message to the user in 
++ your terminal. It syntactically ressembles assembly but doesn't require you
++ to know as much about your computer.
++ Anyways, if you're ready to start learning kasm, open up the next file
++ "01_helloWorld.kasm" where you will start writing actual code.
