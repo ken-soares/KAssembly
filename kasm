@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+
+import check
+import sys
+
+usr_vars = {}
+
+def readfile(filename):
+    tmp = []
+    data = []
+    with open(filename, "r+", encoding='utf8') as f:
+        tmp = f.readlines()
+        for line in tmp:
+            line = line.strip("\n")
+            data.append([token for token in line.split(" ")])
+        return data
+    
+if len(sys.argv) == 1:
+    print("K-Assembly interpreter\n\tuse -h flag for more info")
+else:
+    if sys.argv[1] == "-h":
+        print("read your kasm file with ./kasm {your-file}.kasm")
+        print("You can see example programs in the examplePrograms/ folder")
+        print("list of flags:")
+        print("-v: display version")
+        print("-d: link to language documentation (not implemented)")
+    elif sys.argv[1] == "-v":
+        print("Kasm interpreter ver 0.1 by Kenneth Soares")
+    else:
+        # do some file reading stuff
+        lines = readfile(sys.argv[1])
+
+        # eval fuctions in stdlib 
+        check.eval_lines(lines,usr_vars)
